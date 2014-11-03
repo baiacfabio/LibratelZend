@@ -1,43 +1,256 @@
-<div class="jumbotron">
-    <h1><?php echo sprintf($this->translate('Welcome to %sZend Framework 2%s'), '<span class="zf-green">', '</span>') ?></h1>
-    <p><?php echo sprintf($this->translate('Congratulations! You have successfully installed the %sZF2 Skeleton Application%s. You are currently running Zend Framework version %s. This skeleton can serve as a simple starting point for you to begin building your application on ZF2.'), '<a href="https://github.com/zendframework/ZendSkeletonApplication" target="_blank">', '</a>', \Zend\Version\Version::VERSION) ?></p>
-    <p><a class="btn btn-success btn-lg" href="https://github.com/zendframework/zf2" target="_blank"><?php echo $this->translate('Fork Zend Framework 2 on GitHub') ?> &raquo;</a></p>
+<header class="row">
+    <div class="container">
+        <div class="col-md-4"><img src="img/logo-libratel.png"/></div>
+        <div class="col-md-4">PESQUISA</div>
+        <div class="col-md-4">
+            <a href="" class="btn btn-block btn-orcamento">SOLICITAR ORÇAMENTO</a>
+        </div>
+    </div>
+</header>
+
+<nav class="row" id="menu">
+    <div class="container">
+        <ul>
+            <li class="active"><a href="/preview/public/">Home</a></li>
+            <li><a href="">Quem Somos</a></li>
+            <li><a href="">Serviços</a></li>
+            <li><a href="/preview/public/produto">Produtos</a></li>
+            <li><a href="">Clientes</a></li>
+            <li><a href="">Contato</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="row" id="banner">
+    <div class="container">
+        <img src="img/banner.png"/>
+    </div>
 </div>
 
 <div class="row">
+    <div class="container" id="destaques">
+        <h2>DESTAQUES</h2>
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Follow Development') ?></h3>
+        <div class="col-md-4 destaque">
+            <div class="thumbnail">
+                <img src="img/motor-portao.jpg" alt="...">
+
+                <div class="caption">
+                    <h3>Motor para Portão eletronico</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+                    <p><a href="#"
+                          class="btn btn-block btn-addorcamento"
+                          role="button">Adicionar ao Orçamento</a></p>
+                </div>
             </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('Zend Framework 2 is under active development. If you are interested in following the development of ZF2, there is a special ZF2 portal on the official Zend Framework website which provides links to the ZF2 %swiki%s, %sdev blog%s, %sissue tracker%s, and much more. This is a great resource for staying up to date with the latest developments!'), '<a href="http://framework.zend.com/wiki/display/ZFDEV2/Home">', '</a>', '<a href="http://framework.zend.com/zf2/blog">', '</a>', '<a href="https://github.com/zendframework/zf2/issues">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://framework.zend.com/zf2" target="_blank"><?php echo $this->translate('ZF2 Development Portal') ?> &raquo;</a></p>
+        </div>
+        <div class="col-md-4 destaque">
+            <div class="thumbnail">
+                <img src="img/interfone.jpg" alt="...">
+
+                <div class="caption">
+                    <h3>Interfone Digital</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+                    <p><a href="#"
+                          class="btn btn-block btn-addorcamento"
+                          role="button">Adicionar ao Orçamento</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 destaque">
+            <div class="thumbnail">
+                <img src="img/portao-basculante.jpg" alt="...">
+
+                <div class="caption">
+                    <h3>Portão Basculante</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+                    <p><a href="#"
+                          class="btn btn-block btn-addorcamento"
+                          role="button">Adicionar ao Orçamento</a></p>
+                </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Discover Modules') ?></h3>
+<div class="row">
+    <div class="container" id="outros_produtos">
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="img/camera1.jpg" alt="...">
+
+                <div class="caption">
+                    <h3>Produto 1</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+                    <p><a href="#"
+                          class="btn btn-block btn-addorcamento"
+                          role="button">Adicionar ao Orçamento</a></p>
+                </div>
             </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2.'), '<a href="https://github.com/zendframework/modules.zendframework.com">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://modules.zendframework.com/" target="_blank"><?php echo $this->translate('Explore ZF2 Modules') ?> &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="img/camera2.jpg" alt="...">
+
+                <div class="caption">
+                    <h3>Produto 1</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+                    <p><a href="#"
+                          class="btn btn-block btn-addorcamento"
+                          role="button">Adicionar ao Orçamento</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="img/camera3.jpg" alt="...">
+
+                <div class="caption">
+                    <h3>Produto 1</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+                    <p><a href="#"
+                          class="btn btn-block btn-addorcamento"
+                          role="button">Adicionar ao Orçamento</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div id="enquete">
+                <h3>Enquete</h3>
+
+                <form>
+                    <label>Qual seu sistema de segurança?</label>
+
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            Cameras de Segurança
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Portão Eletrônico
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option2">
+                            Cercas Elétricas
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option2">
+                            Interfonia Digital
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios5" value="option2">
+                            Cães de Guarda
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios6" value="option2">
+                            Nenhum Sistema
+                        </label>
+                    </div>
+                    <a href="#"
+                       class="btn btn-warning"
+                       role="button">Votar</a>
+                </form>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Help &amp; Support') ?></h3>
+<br/>
+<div class="row">
+    <div class="container">
+        <div class="col-md-12" id="depoimentos">
+            <div class="col-md-2"><img src="img/fabio.jpg" alt="..." class="img-circle"></div>
+            <div class="col-md-10">
+                <h1>Os produtos da Libratel são muito bons. Eu recomendo!</h1>
+                <span>Fabio Baía</span>
             </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('If you need any help or support while developing with ZF2, you may reach us via IRC: %s#zftalk on Freenode%s. We\'d love to hear any questions or feedback you may have regarding the beta releases. Alternatively, you may subscribe and post questions to the %smailing lists%s.'), '<a href="irc://irc.freenode.net/zftalk">', '</a>', '<a href="http://framework.zend.com/wiki/display/ZFDEV/Mailing+Lists">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://webchat.freenode.net?channels=zftalk" target="_blank"><?php echo $this->translate('Ping us on IRC') ?> &raquo;</a></p>
+        </div>
+    </div>
+</div>
+<br/>
+<div class="row">
+
+    <div class="container">
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Dicas de Segurança</h3>
+                </div>
+                <div class="panel-body">
+                    <h4>Quando você estiver no carro:</h4>
+
+                    <p>Não deixe as chaves no contato (ignição) de seu carro, ainda que seja por alguns momentos, nem
+                        entregue-as à pessoas entranhas.</p>
+
+                    <p>Obedeça as regras de trânsito.</p>
+
+                    <p>Quando seu veículo apresentar defeito, chame um mecânico de sua confiança.</p>
+
+                    <p><a class="btn btn-success pull-right" href="">Mais dicas &raquo;</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Dicas de Segurança</h3>
+                </div>
+                <div class="panel-body">
+                    <h4>Quando você estiver no carro:</h4>
+
+                    <p>Não deixe as chaves no contato (ignição) de seu carro, ainda que seja por alguns momentos, nem
+                        entregue-as à pessoas entranhas.</p>
+
+                    <p>Obedeça as regras de trânsito.</p>
+
+                    <p>Quando seu veículo apresentar defeito, chame um mecânico de sua confiança.</p>
+
+                    <p><a class="btn btn-success pull-right" href="">Mais dicas &raquo;</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Dicas de Segurança</h3>
+                </div>
+                <div class="panel-body">
+                    <h4>Quando você estiver no carro:</h4>
+
+                    <p>Não deixe as chaves no contato (ignição) de seu carro, ainda que seja por alguns momentos, nem
+                        entregue-as à pessoas entranhas.</p>
+
+                    <p>Obedeça as regras de trânsito.</p>
+
+                    <p>Quando seu veículo apresentar defeito, chame um mecânico de sua confiança.</p>
+
+                    <p><a class="btn btn-success pull-right" href="">Mais dicas &raquo;</a></p>
+                </div>
             </div>
         </div>
     </div>

@@ -50,6 +50,20 @@ return array(
                     ),
                 ),
             ),
+            'produtos' => array(
+                'type' => 'segment',
+                'options' => array(
+                    'route' => '/produto[/][:action[/:id]]',
+                    'constraints' => array(
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                    ),
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Application\Controller',
+                        'controller' => 'Product',
+                        'action' => 'index',
+                    ),
+                ),
+            ),
         ),
     ),
     'service_manager' => array(
@@ -73,7 +87,8 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'Application\Controller\Index' => 'Application\Controller\IndexController'
+            'Application\Controller\Index' => 'Application\Controller\IndexController',
+            'Application\Controller\Product' => 'Application\Controller\ProductController'
         ),
     ),
     'view_manager' => array(
